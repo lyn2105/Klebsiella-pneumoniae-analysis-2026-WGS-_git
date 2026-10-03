@@ -1,4 +1,7 @@
-
+## Download FastQC and MultiQC
+conda install -c bioconda fastp
+# Make script 
+nano fastp.sh
 #!/bin/bash
 #SBATCH --job-name=fastp
 #SBATCH --cpus-per-task=8
