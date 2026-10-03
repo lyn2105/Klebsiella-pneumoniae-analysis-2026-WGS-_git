@@ -1,3 +1,12 @@
+## Download Bowtie2
+wget https://sourceforge.net/projects/bowtie-bio/files/bowtie2/2.5.4/bowtie2-2.5.4-linux-x86_64.zip/download -O bowtie2-2.5.4-linux-x86_64.zip
+##Index human reference
+nano run_homosapiens_index.sh 
+bowtie2-build \
+/mnt/Users/tbinh_workspace/ThesisDataMGI/reference/Index/hg38.fa \
+/mnt/Users/tbinh_workspace/ThesisDataMGI/reference/Index/hg38_index
+
+## Host remove
 #!/bin/bash
 #SBATCH --job-name=host_removal
 #SBATCH --cpus-per-task=8
